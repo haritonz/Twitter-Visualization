@@ -9,10 +9,15 @@
 #import "TwitterDemoAppDelegate_iPad.h"
 
 @implementation TwitterDemoAppDelegate_iPad
+@synthesize Circles;
 
 - (void)dealloc
 {
 	[super dealloc];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [Circles loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Circles" ofType:@"html"]isDirectory:NO]]];
 }
 
 @end

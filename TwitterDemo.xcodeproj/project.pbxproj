@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E163BC2D13A1107F00367D09 /* Circles.html in Resources */ = {isa = PBXBuildFile; fileRef = E163BC2A13A1107F00367D09 /* Circles.html */; };
+		E163BC2E13A1107F00367D09 /* Javascript.js in Sources */ = {isa = PBXBuildFile; fileRef = E163BC2B13A1107F00367D09 /* Javascript.js */; };
+		E163BC2F13A1107F00367D09 /* raphael.js in Sources */ = {isa = PBXBuildFile; fileRef = E163BC2C13A1107F00367D09 /* raphael.js */; };
 		E16C014E13A01E6600469A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16C014D13A01E6600469A6F /* UIKit.framework */; };
 		E16C015013A01E6600469A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16C014F13A01E6600469A6F /* Foundation.framework */; };
 		E16C015213A01E6600469A6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16C015113A01E6600469A6F /* CoreGraphics.framework */; };
@@ -23,6 +26,8 @@
 		E16C017D13A01E6700469A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E16C017B13A01E6700469A6F /* InfoPlist.strings */; };
 		E16C018013A01E6700469A6F /* TwitterDemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E16C017F13A01E6700469A6F /* TwitterDemoTests.h */; };
 		E16C018213A01E6700469A6F /* TwitterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E16C018113A01E6700469A6F /* TwitterDemoTests.m */; };
+		E16C019513A01F2600469A6F /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16C019313A01F2600469A6F /* MainView.m */; };
+		E16C019613A01F2600469A6F /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16C019413A01F2600469A6F /* MainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,28 +41,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E163BC2A13A1107F00367D09 /* Circles.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Circles.html; sourceTree = "<group>"; };
+		E163BC2B13A1107F00367D09 /* Javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Javascript.js; sourceTree = "<group>"; };
+		E163BC2C13A1107F00367D09 /* raphael.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = raphael.js; sourceTree = "<group>"; };
 		E16C014913A01E6600469A6F /* TwitterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16C014D13A01E6600469A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E16C014F13A01E6600469A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E16C015113A01E6600469A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E16C015513A01E6600469A6F /* TwitterDemo-Info.plist */ = {isa = PBXFileReference; path = "TwitterDemo-Info.plist"; sourceTree = "<group>"; };
+		E16C015513A01E6600469A6F /* TwitterDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterDemo-Info.plist"; sourceTree = "<group>"; };
 		E16C015713A01E6600469A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E16C015913A01E6600469A6F /* TwitterDemo-Prefix.pch */ = {isa = PBXFileReference; path = "TwitterDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E16C015913A01E6600469A6F /* TwitterDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterDemo-Prefix.pch"; sourceTree = "<group>"; };
 		E16C015A13A01E6600469A6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E16C015C13A01E6600469A6F /* TwitterDemoAppDelegate.h */ = {isa = PBXFileReference; path = TwitterDemoAppDelegate.h; sourceTree = "<group>"; };
+		E16C015C13A01E6600469A6F /* TwitterDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterDemoAppDelegate.h; sourceTree = "<group>"; };
 		E16C015D13A01E6600469A6F /* TwitterDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterDemoAppDelegate.m; sourceTree = "<group>"; };
-		E16C016013A01E6600469A6F /* TwitterDemoAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = TwitterDemoAppDelegate_iPhone.h; path = iPhone/TwitterDemoAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		E16C016013A01E6600469A6F /* TwitterDemoAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TwitterDemoAppDelegate_iPhone.h; path = iPhone/TwitterDemoAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		E16C016113A01E6600469A6F /* TwitterDemoAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TwitterDemoAppDelegate_iPhone.m; path = iPhone/TwitterDemoAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		E16C016413A01E6600469A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		E16C016713A01E6600469A6F /* TwitterDemoAppDelegate_iPad.h */ = {isa = PBXFileReference; name = TwitterDemoAppDelegate_iPad.h; path = iPad/TwitterDemoAppDelegate_iPad.h; sourceTree = "<group>"; };
+		E16C016713A01E6600469A6F /* TwitterDemoAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TwitterDemoAppDelegate_iPad.h; path = iPad/TwitterDemoAppDelegate_iPad.h; sourceTree = "<group>"; };
 		E16C016813A01E6600469A6F /* TwitterDemoAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TwitterDemoAppDelegate_iPad.m; path = iPad/TwitterDemoAppDelegate_iPad.m; sourceTree = "<group>"; };
 		E16C016B13A01E6700469A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		E16C017213A01E6700469A6F /* TwitterDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E16C017A13A01E6700469A6F /* TwitterDemoTests-Info.plist */ = {isa = PBXFileReference; path = "TwitterDemoTests-Info.plist"; sourceTree = "<group>"; };
+		E16C017A13A01E6700469A6F /* TwitterDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterDemoTests-Info.plist"; sourceTree = "<group>"; };
 		E16C017C13A01E6700469A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E16C017E13A01E6700469A6F /* TwitterDemoTests-Prefix.pch */ = {isa = PBXFileReference; path = "TwitterDemoTests-Prefix.pch"; sourceTree = "<group>"; };
+		E16C017E13A01E6700469A6F /* TwitterDemoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterDemoTests-Prefix.pch"; sourceTree = "<group>"; };
 		E16C017F13A01E6700469A6F /* TwitterDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterDemoTests.h; sourceTree = "<group>"; };
 		E16C018113A01E6700469A6F /* TwitterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterDemoTests.m; sourceTree = "<group>"; };
+		E16C019213A01F2600469A6F /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainView.h; path = TwitterDemo.xcodeproj/MainView.h; sourceTree = SOURCE_ROOT; };
+		E16C019313A01F2600469A6F /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainView.m; path = TwitterDemo.xcodeproj/MainView.m; sourceTree = SOURCE_ROOT; };
+		E16C019413A01F2600469A6F /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainView.xib; path = TwitterDemo.xcodeproj/MainView.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				E16C015313A01E6600469A6F /* TwitterDemo */,
+				E163BC2A13A1107F00367D09 /* Circles.html */,
+				E163BC2B13A1107F00367D09 /* Javascript.js */,
+				E163BC2C13A1107F00367D09 /* raphael.js */,
 				E16C017813A01E6700469A6F /* TwitterDemoTests */,
 				E16C014C13A01E6600469A6F /* Frameworks */,
 				E16C014A13A01E6600469A6F /* Products */,
@@ -149,6 +163,9 @@
 		E16C016613A01E6600469A6F /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				E16C019213A01F2600469A6F /* MainView.h */,
+				E16C019313A01F2600469A6F /* MainView.m */,
+				E16C019413A01F2600469A6F /* MainView.xib */,
 				E16C016713A01E6600469A6F /* TwitterDemoAppDelegate_iPad.h */,
 				E16C016813A01E6600469A6F /* TwitterDemoAppDelegate_iPad.m */,
 				E16C016A13A01E6700469A6F /* MainWindow_iPad.xib */,
@@ -246,6 +263,8 @@
 				E16C015813A01E6600469A6F /* InfoPlist.strings in Resources */,
 				E16C016513A01E6600469A6F /* MainWindow_iPhone.xib in Resources */,
 				E16C016C13A01E6700469A6F /* MainWindow_iPad.xib in Resources */,
+				E16C019613A01F2600469A6F /* MainView.xib in Resources */,
+				E163BC2D13A1107F00367D09 /* Circles.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +304,9 @@
 				E16C015E13A01E6600469A6F /* TwitterDemoAppDelegate.m in Sources */,
 				E16C016213A01E6600469A6F /* TwitterDemoAppDelegate_iPhone.m in Sources */,
 				E16C016913A01E6600469A6F /* TwitterDemoAppDelegate_iPad.m in Sources */,
+				E16C019513A01F2600469A6F /* MainView.m in Sources */,
+				E163BC2E13A1107F00367D09 /* Javascript.js in Sources */,
+				E163BC2F13A1107F00367D09 /* raphael.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +489,7 @@
 				E16C018713A01E6700469A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E16C018813A01E6700469A6F /* Build configuration list for PBXNativeTarget "TwitterDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +498,7 @@
 				E16C018A13A01E6700469A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

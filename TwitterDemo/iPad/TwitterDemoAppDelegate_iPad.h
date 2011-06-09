@@ -10,7 +10,9 @@
 #import "TwitterDemoAppDelegate.h"
 
 @interface TwitterDemoAppDelegate_iPad : TwitterDemoAppDelegate {
-    
+    IBOutlet UIWebView *Circles;
 }
+
+@property (nonatomic, retain) UIWebView *Circles;
 
 @end
